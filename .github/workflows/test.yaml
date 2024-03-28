@@ -17,11 +17,9 @@ jobs:
     strategy:
       fail-fast: false # Keep running if one leg fails.
       matrix:
-        pipeline-version:
-        - v0.44.5
-        - v0.47.5
-        - v0.50.5
-        - v0.53.3
+        pipeline-version: # we always keep pipeline versions which are supported by OSP (ex: 1.13 supports v0.53.x and 1.14 supports v0.56.x) and latest
+        - v0.53.5
+        - v0.56.3
         - latest
     runs-on: ubuntu-latest
     steps:
