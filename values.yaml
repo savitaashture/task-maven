@@ -1,7 +1,7 @@
 ---
 images:
-  minimal: registry.access.redhat.com/ubi8/ubi-minimal:8.9
-  maven: registry.access.redhat.com/ubi8/openjdk-11:latest
+  minimal: registry.access.redhat.com/ubi9-minimal:latest
+  maven: registry.access.redhat.com/ubi9/openjdk-11:latest
 
 annotations:
   tekton.dev/pipelines.minVersion: "0.41.0"
